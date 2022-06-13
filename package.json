@@ -1,13 +1,13 @@
 {
 	"name": "books-app-frontend-nodejs",
 	"private": true,
+	"type": "module",
 	"version": "0.0.0",
 	"scripts": {
-		"start": "run-p backup dev",
+		"start":"run-p backup dev",
 		"dev": "vite",
 		"build": "vite build",
 		"preview": "vite preview",
-		"type": "module",
 		"backup": "node scripts/bcli-backup.mjs"
 	},
 	"dependencies": {

@@ -3,10 +3,12 @@ import * as qdat from './qtools/qdat.mjs';
 
 console.log('backing up all files listed in .env file...');
 
-const targetFilename =
-	'home\\bkr\\general-backup' + qdat.timeStampifyFileName('.env');
+// console.log(qdat);
 
-qdat.getCurrentDateTime();
+const targetFilename =
+	'//home/user/bkr/general-backup/env.' + qdat.timeStampifyFileName('.env');
+
+// qdat.getCurrentDateTime();
 
 fs.copyFile('.env', targetFilename, (err) => {
 	if (err) throw err;
