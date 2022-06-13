@@ -6,13 +6,13 @@
  * 2022-06-13-06-23-19
  */
 export const getCurrentDateTime = () => {
-	var now = new Date();
-	var year = now.getFullYear();
-	var month = now.getMonth() + 1;
-	var day = now.getDate();
-	var hour = now.getHours();
-	var minute = now.getMinutes();
-	var second = now.getSeconds();
+	let now = new Date();
+	let year = now.getFullYear();
+	let month = now.getMonth() + 1;
+	let day = now.getDate();
+	let hour = now.getHours();
+	let minute = now.getMinutes();
+	let second = now.getSeconds();
 	if (month.toString().length == 1) {
 		month = '0' + month;
 	}
@@ -28,7 +28,7 @@ export const getCurrentDateTime = () => {
 	if (second.toString().length == 1) {
 		second = '0' + second;
 	}
-	var dateTime =
+	let dateTime =
 		year +
 		'-' +
 		month +
