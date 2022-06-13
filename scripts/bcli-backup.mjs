@@ -6,7 +6,7 @@ console.log('backing up all files listed in .env file...');
 // console.log(qdat);
 
 const targetFilename =
-	'//home/user/bkr/general-backup/env.' + qdat.timeStampifyFileName('.env');
+	'//home/user/bkr/general-backup/env.' + qdat.timeStampifyFileName();
 
 // qdat.getCurrentDateTime();
 

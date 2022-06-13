@@ -52,6 +52,6 @@ export const getCurrentDateTime = () => {
  * qdat.tempStampifyFileName('index.html','log')
  * index.html.log-2022-06-13-06-23-19
  */
-export const timeStampifyFileName = (filename, idCode = 'backup') => {
-	return `${filename}.${idCode}-${getCurrentDateTime()}`;
+export const timeStampifyFileName = (idCode = 'backup') => {
+	return `${idCode}-${getCurrentDateTime()}`;
 };
